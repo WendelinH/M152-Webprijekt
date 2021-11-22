@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability made easy</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+
+    <div  class="container">
+      <header>
+        <h1>Sustainability made easy</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carousel.html">Carousel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grid.html">Grid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jumbotron.html">Jumbotron</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rechner.html">Rechner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="geolocation.html">GeoLocation</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>-->
+          </ul>
+        </div>
+      </nav>
+      </header>
+
+      <form id="rechnerForm" class="w-25" action="">
+        <input id="z1" class="form-control" type="number" name="zahl1">
+        <select id="op" class="form-control" name="op">
+          <option value="+"> + </option>
+          <option value="-"> - </option>
+          <option value="*"> * </option>
+          <option value="/"> / </option>
+        </select>
+        <input id="z2" class="form-control" type="number" name="zahl2">
+        <button  class="btn btn-outline-primary" type="submit" name="submit">=</button>
+        <span id="result"></span>
+      </form>
+
+      <footer class="footer fixed-bottom bg-dark text-center">
+        <p>Hier steht das Impressum und so Zeugs</p>
+        <i class="fab fa-discord"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-java"></i>
+        <i class="fab fa-python"></i>
+      </footer>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+      <form  id="einkaufForm" class="w-25" action="">
+        <label for="was">Was?</label>
+        <input id="was" class="form-control" type="text" name="was">
+        <label for="wieviel">Wie viel?</label>
+        <input id="wieviel" class="form-control" type="text" name="was">
+        <button type="submit" name="button">Absenden</button>
+      </form>
+      <div id="liste">
+        <h4>Einkaufsliste</h4>
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <!--<script src="js/rechner.js"></script>-->
+    <script src="js/rechner_jq.js"></script>
+    <script src="js/einkaufsliste_jq.js"></script>
+
+  </body>
+</html>

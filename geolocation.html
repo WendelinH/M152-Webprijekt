@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability made easy</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+
+    <div  class="container">
+      <header>
+        <h1>Sustainability made easy</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carousel.html">Carousel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grid.html">Grid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jumbotron.html">Jumbotron</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rechner.html">Rechner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="geolocation.html">GeoLocation</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>-->
+          </ul>
+        </div>
+      </nav>
+      </header>
+
+      <div class="geo_location">
+        <h3>GeoLocation:</h3>
+        <p id="geo_location_output"></p>
+        <div id="map_container">
+        </div>
+        <button id="btn_find_me" class="btn btn-primary">Find Me</button>
+      </div>
+
+      <footer class="footer fixed-bottom bg-dark text-center">
+        <p>Hier steht das Impressum und so Zeugs</p>
+        <i class="fab fa-discord"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-java"></i>
+        <i class="fab fa-python"></i>
+      </footer>
+    </div>
+
+    <script src="js/geolocation_jq.js"></script>
+    <script src="js/random_color.js"></script>
+
+
+  </body>
+</html>
